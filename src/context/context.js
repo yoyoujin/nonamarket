@@ -30,6 +30,10 @@ const AuthContextProvider = ({ children }) => {
     [state],
   );
 
+  // const 저장할변수 = useMemo(()=> {
+  //   return 계산하는_무거운함수()
+  // }, [감시하고_있는_변수])
+
   return (
     // 전역공간에 지정해둬서 다른 애들이 쓸수있게
     <AuthContext.Provider value={value}>{children}</AuthContext.Provider>

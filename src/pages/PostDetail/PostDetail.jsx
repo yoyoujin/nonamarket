@@ -14,6 +14,8 @@ const PostDetail = () => {
   const [commentsData, setCommentsData] = useState([]);
   const { postid } = useParams();
 
+  console.log(postid);
+
   // 댓글 업데이트
   const handleGetComment = async () => {
     try {
